@@ -1,1 +1,63 @@
+zad1:
+def total_euro():
+    rezultat = sati * satnica
+    print("Ukupno:", float(rezultat), "eura")
 
+sati = int(input("Unesi broj sati: "))
+satnica = float(input("Unesi satnicu: "))
+
+print("")
+print("Radni sati:", sati, "h")
+print("eura/h:", satnica)
+total_euro()
+---------------------------------------------------
+zad2:
+try:
+    ocjena = float(input("Unesi broj između 0.0 - 1.0 "))
+    if ocjena <= 0.0 or ocjena >= 1.0:
+        print("Brojevi nisu u range-u")
+    elif ocjena >= 0.9:
+        print("A")
+    elif ocjena >= 0.8:
+        print("B")
+    elif ocjena >= 0.7:
+        print("C")
+    elif ocjena >= 0.6:
+        print("D")
+    elif ocjena >= 0.5:
+        print("E")
+    elif ocjena < 0.5:
+        print("F")
+    else:
+        raise ValueError
+except ValueError:
+    print("To nije broj")
+--------------------------------------------------------
+zad3:
+counter = 0
+min=0
+max = 0
+lista = []
+brojevi=0
+
+while True:
+    x=str(input("Unesi broj "))
+    if (str(x) == "Done"):
+        break
+    counter += 1
+    lista.append(x)
+    if(int(x) > int(max)):
+        max = x
+print("Petlja je završena")
+print("Korisnik je unio",counter,"brojeva")
+lista.sort
+for i in range(len(lista)):
+    brojevi+=int(lista[i])
+    min=lista[0]
+    if(int(lista[i])<int(min)):
+        min = lista[i]
+srednja = brojevi/counter
+print(lista)
+print("Min:",min)
+print("Max:",max)
+print("Srednja vrijednost:",srednja)
