@@ -61,3 +61,4 @@ print(lista)
 print("Min:",min)
 print("Max:",max)
 print("Srednja vrijednost:",srednja)
+----------------------------------------------------
